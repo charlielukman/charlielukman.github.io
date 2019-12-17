@@ -1,0 +1,32 @@
+
+#billboard .banner-slider .flex-control-thumbs li img,
+#tab-active-preview,
+#tab-active-preview span,
+ul.tabs li,
+ul.tabs li a,
+.container .accordion_tabs{
+    behavior: url(../pie/PIE.htc);
+}
+#tab-active-preview.activetab-integrity:before,
+#tab-active-preview.activetab-excellence:before,
+#tab-active-preview.activetab-professionalism:before,
+#tab-active-preview.activetab-independence:before{
+    display: none;
+}
+
+#tab-active-preview.activetab-integrity,
+#tab-active-preview.activetab-excellence,
+#tab-active-preview.activetab-professionalism,
+#tab-active-preview.activetab-independence{
+    background-color:#F2F2F2;
+    border-width:8px;
+    border-style: double;
+}
+ul.tabs li.trigger-tab1,
+ul.tabs li.trigger-tab2,
+ul.tabs li.trigger-tab3,
+ul.tabs li.trigger-tab4{
+    background-color:#F2F2F2;
+    border-style: double;
+    border-width:4px;
+}

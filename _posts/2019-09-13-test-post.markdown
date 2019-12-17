@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Newpost"
+date:   2019-09-13 10:25:41 +0800
+categories: jekyll update
+---
+New post
