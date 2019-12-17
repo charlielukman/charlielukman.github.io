@@ -1,6 +1,6 @@
 ---
 layout: leftnav-page-content
-title: Organisational Structure
+title: Organisational Structure 101
 permalink: /who-we-are/organisational-structure/
 breadcrumb: Organisational Structure
 collection_name: who-we-are
