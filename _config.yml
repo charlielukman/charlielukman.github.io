@@ -1,49 +1,53 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+title: Sentosa Development Corporation
+title-abbreviated: SDC
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: yifan
-github_username:  Gong-Yifan
+  Developing a Fun, Smart, and Sustainable Sentosa
+url: "https://www.sentosa.gov.sg" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: isomerpages/isomerpages-template
+safe: false
+
 plugins:
   - jekyll-feed
-  
+  - jekyll-assets
+  - jekyll-sitemap
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-defaults:
-    - scope:
-        path: ""
-      values:
-        layout: "page"
+# Breadcrumbs
+breadcrumbs:
+  root:
+    hide: false  # show breadcrumbs on root/home page
+    image: false # Show image or title text
+
+# Resource Room and Pagination
+paginate: 12
+
+# Homepage sections
+homepage_hero_i_want_to: false
+homepage_resources: true
+
+# Feedback Form URL
+feedback_form_url: "https://form.gov.sg/5d3e8de073f0b8001294543f"
+
+# FAQ URL
+faq_url: "http://www.ifaq.gov.sg/SENTOSA/apps/fcd_faqmain.aspx"
+
+# Custom CSS file path
+custom_css_path: "/misc/custom.css"
+custom_print_css_path: "/assets/css/print.css"
+
+# Collections for left-nav pages
+baseurl: ""
+collections:
+  who-we-are:
+    output: true
+  what-we-do:
+    output: true
+  partner-us:
+    output: true
+  careers:
+    output: true
+ #collection-name:
+ #  output: true
+resources_name: resources
